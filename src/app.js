@@ -4,7 +4,6 @@ const hbs = require("hbs");
 const geocode = require("./utils/geocode");
 const weather = require("./utils/weather");
 
-// console.log(__dirname);
 // console.log(path.join(__dirname, "../public"));
 
 const app = express();
