@@ -54,13 +54,14 @@ app.get("/weather", (req, res) => {
     if (error) {
       return res.send({ error });
     }
-    weather.forecast(coordinates, place, (error, { message }) => {
+    weather.forecast(coordinates, place, (error, { message, hourly }) => {
       if (error) {
         return res.send({ error });
       }
       return res.send({
         forecast: message,
-        address: req.query.address
+        address: req.query.address,
+        summary: hourly
       });
     });
   });
