@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="/image/weather.png">
+    <title>Express Application</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get the weather</p>
+        <form>
+            <input placeholder="Enter City to Search">
+            <button>Search</button>
+        </form>
+        <br>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+
+    </div>
+    {{>footer}}
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
